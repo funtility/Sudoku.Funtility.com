@@ -1,0 +1,35 @@
+<!DOCTYPE htlm>
+<html lang="en">
+    <head>
+        <title>Funtility - Sudoku</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./images/Favicon.png" type="image/x-icon" />
+        <link async rel="stylesheet" href="./styles/site.css">
+        <script src="./scripts/Sudoku.js"></script>
+        <script src="./scripts/main.js"></script>
+    </head>
+    <body id='body'>
+        <header class="header-wide">
+            <a href="http:funtility.com" title="Funtility Home">
+                <img src="images/LogoRoundBevel_512.png">
+            </a>
+            <h2>
+                Solve Sudoku
+            </h2>
+        </header>
+        <main id="main">
+            <div id="console">
+                <button id="btnSolve">SOLVE</button>
+                <br>
+                <button id="btnClear">CLEAR</button>
+            </div>
+            <div id="grid">
+                <div id="dialog" class="dialog"></div>
+            </div>
+        </main>
+    </body>
+    <script>
+        document.onload = init();
+    </script>
+</html>
